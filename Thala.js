@@ -16,6 +16,7 @@ function checkThala() {
     displayOutput("Thala for a Reason!\n7 letters found!");
     confettiAnimation();
     openForm();
+    playYup();
     return;
   }
   //Check Number of words
@@ -24,6 +25,7 @@ function checkThala() {
     displayOutput("Thala for a Reason!\n7 Words found!");
     confettiAnimation();
     openForm();
+    playYup();
     return;
   }
 
@@ -33,6 +35,7 @@ function checkThala() {
     displayOutput(numerologyResult);
     confettiAnimation();
     openForm();
+    playYup();
     return;
   }
   displayOutput2("No connection to 7 found. Moye Moye!");
