@@ -16,6 +16,19 @@ body {
     width: 95vw;
 }
 
+.bg {
+    background-image: url('yip2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Background for mobile devices */
+@media only screen and (max-width: 767px) {
+    .bg {
+        background-image: url(yip.jpg);
+    }
+}
+
 .flex {
     display: flex;
     flex-direction: column;
