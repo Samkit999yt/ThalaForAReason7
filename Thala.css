@@ -84,6 +84,7 @@ body {
     border-radius: 5px;
     margin-bottom: 20px;
     background-color: black;
+    color:white;
 }
 
 #Get-Reason::placeholder {
@@ -94,6 +95,7 @@ body {
 
 #Get-Reason:focus-visible {
     outline: none;
+    color:white;
 }
 
 .git{
