@@ -145,11 +145,13 @@ var audioo = new Audio(
 
 function playNoYup() {
   audio.pause();
+  audio.currentTime=0;
   audio.play();
 }
 
 function playYup() {
   audioo.pause();
+  audioo.currentTime=0;
   audioo.play();
 }
 
