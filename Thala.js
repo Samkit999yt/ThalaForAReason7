@@ -38,6 +38,14 @@ function checkThala() {
     playYup();
     return;
   }
+  // Check wordplay
+  if (wordplayConnection(Thala)) {
+    displayOutput('Thala for a Reason! Wordplay connection to 7!');    
+    confettiAnimation();
+    openForm();
+    playYup();
+    return;
+    }
   displayOutput2("No connection to 7 found. Moye Moye!");
   openForm2();
   playNoYup();
@@ -85,6 +93,13 @@ function numerologyConnection(input) {
   // No numerology connection found
   return false;
 }
+
+function wordplayConnection(input) {
+    // Check if the input contains words that sound like 'seven'
+    const soundingWordsRegex = /\b(seven|sevin|sevn|sevun|sevin|thala|dhoni|captain|csk|sath|mahi|mahendra|ms|helicopter|koyal|msd|chennai|7|saath|ranchi|legend|jharkhand|depression)\b/i;
+    return soundingWordsRegex.test(input);
+}
+
 
 function confettiAnimation() {
   let duration = 5 * 1000;
