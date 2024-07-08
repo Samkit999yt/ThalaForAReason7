@@ -96,7 +96,7 @@ function numerologyConnection(input) {
 
 function wordplayConnection(input) {
     // Check if the input contains words that sound like 'seven'
-    const soundingWordsRegex = /\b(seven|sevin|sevn|sevun|sevin|thala|dhoni|captain|csk|sath|mahi|mahendra|ms|helicopter|koyal|msd|chennai|7|saath|ranchi|legend|jharkhand|depression)\b/i;
+    const soundingWordsRegex = /\b(seven|sevin|sevn|sevun|sevin|thala|dhoni|captain|csk|sath|mahi|mahendra|ms|helicopter|koyal|msd|chennai|7|saath|ranchi|legend|jharkhand|depression|Thalavity|king|goat)\b/i;
     return soundingWordsRegex.test(input);
 }
 
